@@ -55,6 +55,11 @@
       background-color: $color-light-magneta;
       box-shadow: 0 0 1rem 0.5rem rgba($color-black, 0.2) inset;
       z-index: -1;
+
+      @include respond(tab-port) {
+        width: 25rem;
+        height: 25rem;
+      }
     }
   }
 
@@ -120,6 +125,11 @@
       background-color: $color-light-magneta;
       box-shadow: 0 0 1rem 0.5rem rgba($color-black, 0.2) inset;
       transform: rotate(-5deg);
+
+      @include respond(tab-port) {
+        width: 9rem;
+        height: 9rem;
+      }
     }
 
     &::before {
@@ -135,6 +145,11 @@
       background-color: $color-light-magneta;
       box-shadow: 0 0 1rem 0.5rem rgba($color-black, 0.2) inset;
       transform: rotate(-5deg);
+
+      @include respond(tab-port) {
+        width: 6rem;
+        height: 6rem;
+      }
     }
   }
 }

@@ -79,6 +79,12 @@
     cursor: pointer;
     z-index: 1500;
 
+    @include respond(tab-land) {
+      width: 9rem;
+      height: 9rem;
+      right: 2rem;
+    }
+
     .bars-container {
       position: absolute;
       top: 50%;
@@ -151,6 +157,11 @@
     right: 7.5rem;
     z-index: -1;
     transition: all 0.8s;
+
+    @include respond(tab-land) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
 
     &--active {
       transform: scale(80);
