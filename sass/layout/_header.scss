@@ -127,8 +127,8 @@
       transform: rotate(-5deg);
 
       @include respond(tab-port) {
-        top: 5rem;
-        left: -2rem;
+        top: 3rem;
+        left: -3rem;
         width: 9rem;
         height: 9rem;
       }

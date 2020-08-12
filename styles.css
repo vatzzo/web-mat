@@ -479,8 +479,8 @@ h4 {
       transform: rotate(-5deg); }
       @media (max-width: 900px) {
         .header__text-box::after {
-          top: 5rem;
-          left: -2rem;
+          top: 3rem;
+          left: -3rem;
           width: 9rem;
           height: 9rem; } }
     .header__text-box::before {
@@ -786,7 +786,7 @@ h4 {
           grid-column: 3 / span 5;
           grid-row: 2 / span 16; }
           .about__hobbies .pictures .picture-box--1::before {
-            background-image: url("./images/mat-palm.JPG"); }
+            background-image: url("./images/mat-palm.jpg"); }
           @media (max-width: 900px) {
             .about__hobbies .pictures .picture-box--1 {
               grid-column: 10 / span 5;
@@ -800,7 +800,7 @@ h4 {
           grid-column: 9 / span 7;
           grid-row: 2 / span 8; }
           .about__hobbies .pictures .picture-box--2::before {
-            background-image: url("./images/mat-skates.JPG"); }
+            background-image: url("./images/mat-skates.jpg"); }
           @media (max-width: 900px) {
             .about__hobbies .pictures .picture-box--2 {
               grid-column: 4 / span 11;
@@ -814,7 +814,7 @@ h4 {
           grid-column: 9 / span 2;
           grid-row: 11 / span 7; }
           .about__hobbies .pictures .picture-box--3::before {
-            background-image: url("./images/mat-quad.JPG"); }
+            background-image: url("./images/mat-quad.jpg"); }
             @media (max-width: 900px) {
               .about__hobbies .pictures .picture-box--3::before {
                 background-position: top; } }
@@ -831,7 +831,7 @@ h4 {
           grid-column: 12 / span 4;
           grid-row: 11 / span 7; }
           .about__hobbies .pictures .picture-box--4::before {
-            background-image: url("./images/mat-friends.JPG"); }
+            background-image: url("./images/mat-friends.jpg"); }
           @media (max-width: 900px) {
             .about__hobbies .pictures .picture-box--4 {
               display: none; } }

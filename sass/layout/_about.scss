@@ -226,7 +226,7 @@
           grid-row: 2 / span 16;
 
           &::before {
-            background-image: url("./images/mat-palm.JPG");
+            background-image: url("./images/mat-palm.jpg");
           }
 
           @include respond(tab-port) {
@@ -246,7 +246,7 @@
           grid-row: 2 / span 8;
 
           &::before {
-            background-image: url("./images/mat-skates.JPG");
+            background-image: url("./images/mat-skates.jpg");
           }
           @include respond(tab-port) {
             grid-column: 4 / span 11;
@@ -265,7 +265,7 @@
           grid-row: 11 / span 7;
 
           &::before {
-            background-image: url("./images/mat-quad.JPG");
+            background-image: url("./images/mat-quad.jpg");
             @include respond(tab-port) {
               background-position: top;
             }
@@ -288,7 +288,7 @@
           grid-row: 11 / span 7;
 
           &::before {
-            background-image: url("./images/mat-friends.JPG");
+            background-image: url("./images/mat-friends.jpg");
           }
 
           @include respond(tab-port) {
