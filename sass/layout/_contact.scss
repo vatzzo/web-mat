@@ -11,7 +11,6 @@
 
   @include respond(phone) {
     margin-top: -25vh;
-    height: 50vh;
   }
 
   &__container {
@@ -43,7 +42,7 @@
       height: 40%;
       width: 50%;
       margin-left: 25%;
-      margin-top: 5%;
+      margin-top: 20%;
     }
 
     &:hover {

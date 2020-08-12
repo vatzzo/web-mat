@@ -25,11 +25,41 @@
   img {
     width: 100%;
     border-bottom: solid 0.5rem $color-light-green;
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__text {
+    @include respond(phone) {
+      display: none;
+    }
     p {
       padding: 1rem 2rem 0 2rem;
+    }
+  }
+
+  &--1 {
+    @include respond(phone) {
+      background-image: url("./images/projects/pc-landing-page.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &--2 {
+    @include respond(phone) {
+      background-image: url("./images/projects/pc-typing-game.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &--3 {
+    @include respond(phone) {
+      background-image: url("./images/projects/pc-words-beast.jpg");
+      background-size: cover;
+      background-position: center;
     }
   }
 }
