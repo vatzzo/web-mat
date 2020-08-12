@@ -2,8 +2,8 @@
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(
-      rgba($color-light-white, 0.8),
-      rgba($color-light-grey, 0.8)
+      rgba($color-light-grey, 0.8),
+      rgba($color-medium-grey, 0.8)
     ),
     url("./images/view.jpg");
   background-position: center;
@@ -11,6 +11,11 @@
 
   @include respond(phone) {
     margin-top: -25vh;
+  }
+
+  p {
+    padding: 5rem;
+    font-size: 2.5rem;
   }
 
   &__container {
@@ -41,8 +46,11 @@
     @include respond(phone) {
       height: 40%;
       width: 50%;
-      margin-left: 25%;
+      margin-left: -25%;
       margin-top: 20%;
+      animation: none;
+      width: 150%;
+      transform: skewY(-12deg);
     }
 
     &:hover {
@@ -50,10 +58,15 @@
     }
 
     .box-container {
+      @include respond(phone) {
+        transform: skewY(+12deg);
+        font-size: 3rem;
+      }
       .box {
         margin-top: 1rem;
         i {
           margin-right: 2rem;
+          font-size: 3rem;
         }
       }
     }

@@ -786,7 +786,7 @@ h4 {
           grid-column: 3 / span 5;
           grid-row: 2 / span 16; }
           .about__hobbies .pictures .picture-box--1::before {
-            background-image: url("./images/mat-palm.jpg"); }
+            background-image: url("./images/mat-palm.JPG"); }
           @media (max-width: 900px) {
             .about__hobbies .pictures .picture-box--1 {
               grid-column: 10 / span 5;
@@ -864,12 +864,15 @@ h4 {
 .contact {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(246, 246, 246, 0.8), rgba(231, 231, 231, 0.8)), url("./images/view.jpg");
+  background-image: linear-gradient(rgba(231, 231, 231, 0.8), rgba(196, 196, 196, 0.8)), url("./images/view.jpg");
   background-position: center;
   background-size: cover; }
   @media (max-width: 600px) {
     .contact {
       margin-top: -25vh; } }
+  .contact p {
+    padding: 5rem;
+    font-size: 2.5rem; }
   .contact__container {
     position: relative;
     z-index: 0;
@@ -897,14 +900,22 @@ h4 {
       .contact__container {
         height: 40%;
         width: 50%;
-        margin-left: 25%;
-        margin-top: 20%; } }
+        margin-left: -25%;
+        margin-top: 20%;
+        animation: none;
+        width: 150%;
+        transform: skewY(-12deg); } }
     .contact__container:hover {
       animation: none; }
+    @media (max-width: 600px) {
+      .contact__container .box-container {
+        transform: skewY(12deg);
+        font-size: 3rem; } }
     .contact__container .box-container .box {
       margin-top: 1rem; }
       .contact__container .box-container .box i {
-        margin-right: 2rem; }
+        margin-right: 2rem;
+        font-size: 3rem; }
 
 .footer {
   width: 100%;
