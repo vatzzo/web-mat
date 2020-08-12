@@ -1,0 +1,63 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+  margin-top: -8vh;
+  background-image: linear-gradient(
+      rgba($color-light-white, 0.8),
+      rgba($color-light-grey, 0.8)
+    ),
+    url("../../images/view.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @include respond(phone) {
+    margin-top: -25vh;
+    height: 50vh;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 0;
+    width: 40%;
+    height: 50%;
+    margin-left: 30%;
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.7rem $color-light-magneta;
+    border-radius: 6px;
+    background-color: rgba($color-light-magneta, 0.4);
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
+    animation: rotate;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+    @include respond(tab-port) {
+      height: 30%;
+      margin-top: 20%;
+    }
+
+    @include respond(phone) {
+      height: 40%;
+      width: 60%;
+      margin-left: 20%;
+      margin-top: 20%;
+    }
+
+    &:hover {
+      animation: none;
+    }
+
+    .box-container {
+      .box {
+        margin-top: 1rem;
+        i {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}

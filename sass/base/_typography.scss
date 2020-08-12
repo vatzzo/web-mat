@@ -1,0 +1,84 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+.header {
+  &__text-box {
+    font-family: "Nunito Sans", sans-serif;
+
+    .heading-name {
+      font-family: "DM Serif Text", serif;
+      text-transform: capitalize;
+      letter-spacing: 0.6rem;
+      font-weight: 400;
+    }
+
+    .heading-profession {
+      text-transform: capitalize;
+      font-weight: 400;
+      color: $color-magneta;
+    }
+
+    .btn {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.contact {
+  text-align: center;
+  font-weight: 700;
+  .box-container {
+    font-weight: 700;
+    font-size: 2.2rem;
+    .box {
+      text-align: left;
+      i {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.portfolio-box {
+  &__text {
+    h5 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    p {
+      text-align: justify;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.card {
+  h4 {
+    text-transform: uppercase;
+  }
+
+  .list {
+    text-decoration: none;
+    list-style: none;
+  }
+}

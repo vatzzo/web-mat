@@ -1,0 +1,60 @@
+.btn {
+  transition: all 0.2s ease-in;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2rem;
+    display: inline-block;
+    border-radius: 4rem;
+    transition: all 0.3s;
+    position: relative;
+  }
+
+  &--dark-magneta {
+    color: $color-light-yellow;
+    background-color: $color-magneta;
+    &::after {
+      background-color: $color-magneta;
+    }
+  }
+
+  &--empty {
+    color: $color-magneta;
+    font-weight: 700;
+    background-color: white;
+    border: solid 0.5rem $color-magneta;
+    &::after {
+      background-color: white;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    transform: scale(1.02) translateY(-0.6rem);
+    box-shadow: 0 0 2rem 1rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(0.3rem);
+    box-shadow: none;
+  }
+}

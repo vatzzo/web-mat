@@ -1,0 +1,15 @@
+{
+  "name": "strona",
+  "version": "1.0.0",
+  "description": "My landing page",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "compile:sass": "node-sass --watch sass/main.scss styles.css"
+  },
+  "author": "Mateusz Łata",
+  "license": "ISC"
+}

@@ -1,0 +1,140 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: $color-light-white;
+
+  &__background-inclined {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-light-green,
+      $color-medium-green
+    );
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  .main-img {
+    position: absolute;
+    left: 15rem;
+    bottom: 0;
+    height: 105%;
+
+    @include respond(tab-land) {
+      left: 5rem;
+    }
+
+    @include respond(tab-port) {
+      left: 50%;
+      height: 65%;
+      transform: translateX(-50%);
+    }
+
+    @include respond(phone) {
+      left: 50%;
+      height: 70%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    &::after {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      display: inline-block;
+      width: 35rem;
+      height: 35rem;
+      border-radius: 50%;
+      background-color: $color-light-magneta;
+      box-shadow: 0 0 1rem 0.5rem rgba($color-black, 0.2) inset;
+      z-index: -1;
+    }
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    color: $color-black;
+    z-index: 1;
+    text-align: end;
+
+    @include respond(tab-land) {
+      right: 5%;
+    }
+
+    @include respond(tab-port) {
+      top: 10%;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @include respond(phone) {
+      right: 50vw;
+      top: 15%;
+      transform: translateX(50%);
+    }
+
+    .heading-name {
+      animation-name: move-in-right;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+      @include respond(tab-port) {
+        font-size: 5.5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 4.5rem;
+      }
+    }
+
+    .heading-profession {
+      animation-name: move-in-left;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 3rem;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 8rem;
+      z-index: -1;
+      content: "";
+      display: block;
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      background-color: $color-light-magneta;
+      box-shadow: 0 0 1rem 0.5rem rgba($color-black, 0.2) inset;
+      transform: rotate(-5deg);
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      content: "";
+      display: block;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      background-color: $color-light-magneta;
+      box-shadow: 0 0 1rem 0.5rem rgba($color-black, 0.2) inset;
+      transform: rotate(-5deg);
+    }
+  }
+}

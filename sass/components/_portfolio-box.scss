@@ -1,0 +1,35 @@
+.portfolio-box {
+  width: 25%;
+  height: 80%;
+  padding-bottom: 2rem;
+  background-color: $color-light-white;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+
+  @include respond(tab-port) {
+    height: 60%;
+    width: 30%;
+  }
+
+  @include respond(phone) {
+    height: 30%;
+    width: 60%;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  img {
+    width: 100%;
+    border-bottom: solid 0.5rem $color-light-green;
+  }
+
+  &__text {
+    p {
+      padding: 1rem 2rem 0 2rem;
+    }
+  }
+}
