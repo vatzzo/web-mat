@@ -2,15 +2,15 @@
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(
-      rgba($color-light-grey, 0.8),
-      rgba($color-medium-grey, 0.8)
+      rgba($color-light-grey, 0.7),
+      rgba($color-medium-grey, 0.7)
     ),
     url("./images/view.jpg");
   background-position: center;
   background-size: cover;
 
   @include respond(phone) {
-    margin-top: -25vh;
+    margin-top: -17vh;
   }
 
   p {
@@ -24,13 +24,13 @@
     width: 40%;
     height: 50%;
     margin-left: 30%;
-    margin-top: 7rem;
+    margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid 0.7rem $color-light-magneta;
     border-radius: 6px;
-    background-color: rgba($color-light-magneta, 0.4);
+    background-color: rgba($color-light-magneta, 0.8);
     box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
     animation: rotate;
     animation-duration: 1.2s;
@@ -39,17 +39,19 @@
     animation-direction: alternate-reverse;
 
     @include respond(tab-port) {
-      height: 30%;
-      margin-top: 20%;
+      height: 40%;
+      margin-top: 10%;
     }
 
     @include respond(phone) {
       height: 40%;
-      width: 50%;
-      margin-left: -25%;
-      margin-top: 20%;
+      width: 100%;
+      border-left: 0;
+      border-right: 0;
+      margin-left: 0;
+      margin-top: 17.5%;
+      border-radius: 0px;
       animation: none;
-      width: 150%;
       transform: skewY(-12deg);
     }
 
